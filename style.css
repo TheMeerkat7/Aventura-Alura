@@ -1,0 +1,52 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body {
+    /*background-image: linear-gradient(-45deg,#ff97ca,#ff348e,#be0049);*/
+    background-color: black;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: 300% 350%;
+    animation: anima-fundo infinite alternate ease;
+    animation-duration: 2s;
+    animation-delay: 100ms;
+}
+
+button {
+    background-color: #770021;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display:block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 40%;
+}
+@keyframes anima-fundo{
+    from{
+        background-position: 0% 50%
+    }
+    to{
+        background-position: 100% 50%;
+    }
+}
